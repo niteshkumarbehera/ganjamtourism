@@ -1,0 +1,15 @@
+.logout-image{
+    width: 15px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1200px){
+    .logout-btn{
+        width: -webkit-fill-available;
+        margin: 10px 15px 15px 15px;
+    }
+}

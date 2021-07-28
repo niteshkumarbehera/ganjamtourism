@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./css/animation.css" type="text/css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>sign_in</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp" id="home">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo...">
+            </div>
+            <li><a href="index.html#">HOME</a></li>
+            <li><a href="index.html#our-services">SERVICES</a></li>
+            <li><a href="index.html#team">OUR TEAM</a></li>
+            <li><a href="index.html#CONTACT US">CONTACT US</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <form action="https://www.google.com/search?q" method="get">
+                <input type="search" name="search" id="search">
+                <button type="submit" class="searchbtn"> <img src="./image/logo/search.png" class="search-image"
+                        alt="search.."></button>
+            </form>
+            <div class="date">
+                <span id="time"></span>
+            </div>
+        </div>
+        <div class="berger">
+            <div class="berger-bar"></div>
+            <div class="berger-bar"></div>
+            <div class="berger-bar"></div>
+        </div>
+    </nav>
+
+  
+    <section class="login-body">
+        <div class="login-container">
+            <form class="form" action="./sign_in.php" method="POST">
+                <h2>Please Login Here:</h2>
+                
+                <div class="other-details">
+                    <div class="important-data">
+                        <div class="col-md-4">
+                            <label class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" name="email" class="form-control"
+                                    aria-describedby="inputGroupPrepend" placeholder="Enter your email/gmail" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="password" required>
+                        
+                    </div>
+                   
+                    <div class="btn-divide">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="btn-container">
+                            <button class="btn" type="submit" value="submit" name="submit">Login</button>
+                        </div>
+                        <div class="term">
+                            <p>New member?<a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+ 
+
+    <script src="./js/register.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/berger.js"></script>
+    <script src="./js/register_success.js"></script>
+    <script src="./js/register_warning.js"></script>
+</body>
+
+</html>

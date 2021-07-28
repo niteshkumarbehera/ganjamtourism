@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="css/animation.css" type="text/css">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>REGISTER</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp" id="home">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="image/logo.png" alt="logo...">
+            </div>
+            <li><a href="index.html#">HOME</a></li>
+            <li><a href="index.html#our-services">SERVICES</a></li>
+            <li><a href="index.html#team">OUR TEAM</a></li>
+            <li><a href="index.html#CONTACT US">CONTACT US</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <form action="https://www.google.com/search?q" method="get">
+                <input type="search" name="search" id="search">
+                <button type="submit" class="searchbtn"> <img src="./image/logo/search.png" class="search-image"
+                        alt="search.."></button>
+            </form>
+            <div class="date">
+                <span id="time"></span>
+            </div>
+        </div>
+        <div class="berger">
+            <div class="berger-bar"></div>
+            <div class="berger-bar"></div>
+            <div class="berger-bar"></div>
+        </div>
+    </nav>
+
+    <section class="login-body">
+        <div class="login-container">
+            <form class="form" action="./register.php" method="POST">
+                <h2>Please Register Here:</h2>
+                <div class="first-lastName">
+                    <div class="col-md-4">
+                        <label class="form-label">First name</label>
+                        <input type="text" name="firstname" class="form-control" value="" required style="text-align:center;">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Last name</label>
+                        <input type="text" name="lastname" class="form-control" value=""  requiredstyle="text-align:center;">
+                    </div>
+                </div>
+                <div class="other-details">
+                    <div class="important-data">
+                        <div class="col-md-4">
+                            <label class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="email" name="email" class="form-control"
+                                    aria-describedby="inputGroupPrepend" placeholder="Enter your email/gmail" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="password" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" name="c_password"
+                                placeholder="same as password" required>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">Phone no.</label>
+                            <input type="number" name="phone" class="form-control" minlength="6" maxlength="12" required>
+                        </div>
+                    </div>
+                    <div class="btn-divide2">
+                        <div class="col-md-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select" value="state" name="state" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="odisha" name="odisha" selected>ODISHA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">District</label>
+                            <select class="form-select" value="dist" name="dist" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="ANGUL">ANGUL</option>
+                                <option value="BALANGIR">BALANGIR</option>
+                                <option value="BALASORE">BALASORE</option>
+                                <option value="BARGARH">BARGARH</option>
+                                <option value="BHADRAK">BHADRAK</option>
+                                <option value="BOUDH">BOUDH</option>
+                                <option value="CUTTACK">CUTTACK</option>
+                                <option value="DEOGARH">DEOGARH</option>
+                                <option value="DHENKALA">DHENKALA</option>
+                                <option value="GAJAPATI">GAJAPATI</option>
+                                <option value="GANJAM">GANJAM</option>
+                                <option value="JAGATSINHGAPUR">JAGATSINHGAPUR</option>
+                                <option value="JAJPUR">JAJPUR</option>
+                                <option value="JHARSUGUDA">JHARSUGUDA</option>
+                                <option value="KALAHANDI">KALAHANDI</option>
+                                <option value="KANDHAMAL">KANDHAMAL</option>
+                                <option value="KENDRAPARA">KENDRAPARA</option>
+                                <option value="KENDUJHAR">KENDUJHAR</option>
+                                <option value="KHORDHA">KHORDHA</option>
+                                <option value="KORAPUT">KORAPUT</option>
+                                <option value="MALKANGIRI">MALKANGIRI</option>
+                                <option value="MAYURBHANJ">MAYURBHANJ</option>
+                                <option value="NABARANGAPUR">NABARANGAPUR</option>
+                                <option value="NAYAGARH">NAYAGARH</option>
+                                <option value="NUAPADA">NUAPADA</option>
+                                <option value="PURI">PURI</option>
+                                <option value="RAYAGADA">RAYAGADA</option>
+                                <option value="SAMBALPUR">SAMBALPUR</option>
+                                <option value="SONEPUR">SONEPUR</option>
+                                <option value="SUNDARGHAR">SUNDARGHAR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-divide">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                       
+                        <div class="btn-container">
+                            <button class="btn" type="submit" value="submit" name="submit">Register</button>
+                        </div>
+                        <div class="term">
+                            <p>Existing member? <a href="sign_in.html">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- <footer class="footer" id="footer">
+        <p class="footer-text">
+            copyright &copy; 2027 ganjamtourism.com - All rights reserved
+        </p>
+    </footer> -->
+
+    <script src="./js/register.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/berger.js"></script>
+    <script src="./js/register_success.js"></script>
+    <script src="./js/register_warning.js"></script>
+</body>
+
+</html>

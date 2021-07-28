@@ -1,0 +1,26 @@
+@keyframes nitesh{
+    0.1%{background-image: url('../image/kalinga.png');}
+    10%{background-image: url('../image/biju_pattniak_park.png');}
+    20%{background-image: url('../image/balkumari.png');}
+    30%{background-image: url('../image/budhkhol.png');}
+    40%{background-image: url('../image/chilika_lake.jpg');}
+    50%{background-image: url('../image/gopalpur.png');}
+    60%{background-image: url('../image/taratarini.png');}
+    70%{background-image: url('../image/tampara_lake.png');}
+    80%{background-image: url('../image/taptapani.png');}
+    90%{background-image: url('../image/panth_nivas.png');}
+    100%{background-image: url('../image/dam.png');}
+}
+@keyframes text{
+    0.1%{content: "balakumari ghat";}
+    10%{content: "biju park";}
+    20%{content: "balkumari";}
+    30%{content: "budhkhol";}
+    40%{content: "chilika lake";}
+    50%{content: "gopalpur sea beach";}
+    60%{content: "taratarini temple";}
+    70%{content: "tampara lake";}
+    80%{content: "taptpani hotspring";}
+    90%{content: "panth nivas";}
+    100%{content: "baghalati dam";}
+}
